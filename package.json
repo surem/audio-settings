@@ -1,0 +1,10 @@
+{
+    "version": "1.0.0",
+    "name": "com.surem.cordova.plugins",
+    "cordova_name": "AudioSettings",
+    "description": "Cordova Android AudioSettings Plugin",
+    "repo": "https://github.com/surem/audio-settings.git",
+    "issue": "https://github.com/surem/audio-settings/issues",
+    "license": "SureM",
+    "keywords": [ ]
+}

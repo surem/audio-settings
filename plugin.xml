@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.surem.cordova.plugins"
+        version="1.0.0">
+    <name>AudioSettings</name>
+    <description>SureM Android AudioSettings Plugin</description>
+    <license>SureM License</license>
+    <keywords>Ionic,Android,AudioSettings</keywords>
+    <repo>https://github.com/surem/ionic-plugins-android-audio-settings.git</repo>
+    <issue>https://github.com/surem/ionic-plugins-android-audio-settings/issues</issue>
+
+    <js-module src="www/audio_settings.js" name="audio_settings">
+        <clobbers target="cordova.plugins.AudioSettings" />       ???
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AudioSettings">
+                <param name="android-package" value="com.surem.cordova.plugins.AudioSettings" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/AudioSettings.java" target-dir="src/com/surem/cordova/plugins" />
+    </platform>
+
+</plugin>
