@@ -7,12 +7,12 @@ var AudioSettings = function() {
 
 };
 
-AudioSettings.get = function() {
-    exec(null, null, "AudioSettings", "get", []);
+AudioSettings.get = function(success, fail) {
+    exec(success, fail, "AudioSettings", "get", []);
 };
 
-AudioSettings.set = function(obj) {
-    exec(null, null, "AudioSettings", "set", [obj]);
+AudioSettings.set = function(obj, success, fail) {
+    exec(success, fail, "AudioSettings", "set", [obj]);
 };
 
 module.exports = AudioSettings;
